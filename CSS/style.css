@@ -262,9 +262,9 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 34px;
-  width: 34px;
-  border: 1px solid #9c9c9c;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #e0e0dd;
   border-radius: 50%;
   margin: 0 10px;
 }
@@ -280,6 +280,7 @@ a:hover {
 .social-media {
   height: 48px;
   width: 48px;
+  border: 1px solid #9c9c9c;
 }
 
 .btn-container {
@@ -344,6 +345,10 @@ a:hover {
   background: #fff;
   color: #188145;
   border: 1px solid #188145;
+}
+.wreath-btn:hover svg path {
+  stroke: #fff;
+  transition: all 0.3s linear;
 }
 
 .cart-btn {
@@ -429,6 +434,9 @@ ul > * {
 
 .instagram-img {
   width: calc(100% / 5);
+  margin-bottom: -3px;
+  max-height: 380px;
+  object-fit: cover;
 }
 .inspiration {
   background: #d2ffe5;
@@ -468,8 +476,8 @@ ul > * {
   width: 100%;
   z-index: 1;
 }
-.submenu *:first-child{
- margin-top: 0px;
+.submenu *:first-child {
+  margin-top: 0px;
 }
 .submenu::before {
   content: "";
@@ -496,4 +504,86 @@ ul > * {
 }
 .hidden {
   display: none;
+}
+
+.burger_icon {
+  display: flex;
+  align-items: center;
+  width: 22px;
+  height: 18px;
+  position: relative;
+}
+
+.burger_icon::before,
+.burger_icon::after {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #333;
+}
+.burger_icon > span {
+  width: 50%;
+  height: 2px;
+  background-color: #333;
+}
+.burger_icon::before {
+  content: "";
+  top: 0px;
+}
+.burger_icon::after {
+  content: "";
+  bottom: 0px;
+}
+
+.banner-about-us {
+  background: #eaf8f0;
+  padding: 65px 63px 20px 63px;
+}
+
+.nav_button{
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+}
+.nav_button{
+  font-size: 22px;
+}
+
+.history_banner{
+  background: #EAF8F0;
+  padding: 65px 63px 20px 63px;
+  display: flex;
+}
+.medal{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: calc(100%/3 - 40px);
+  margin-bottom: 58px;
+}
+.history_banner_article{
+  max-width: 56%;
+}
+.text{
+  max-width: 80%;
+}
+.gap-top{
+  margin-top: 40px !important;
+}
+.medals{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.tiny{
+  margin-top: 11px;
+  line-height: 22px;
+  display: block;
+}
+.medal_img{
+  width: 100%;
+  height: 80px;
 }
